@@ -1,0 +1,122 @@
+.medias_filter {
+    margin-top: 20px;
+    /*border: none;*/
+}
+
+.medias_filter label {
+    font-size: 18px;
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+.medias_filter select {
+    width: 170px;
+    height: 30px;
+    background-color: #901C1C;
+    padding-left: 10px;
+    /* border: none; */
+    /* outline: none; */
+    border-bottom: 1px solid white;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.medias_filter option {
+    font-size: 18px;
+    font-weight: 700;
+    /* background-color: #901C1C; */
+    border-bottom: 1px solid #fff;
+}
+
+option[selected] {
+    display: none;
+ }
+
+ 
+.medias_section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 70px;
+    margin-top: 50px;
+}
+
+.medias_section article {
+    justify-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.medias_section article .infos-media {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.medias_section article a {
+    /* justify-self: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;
+    width: 100%;
+    /* color: black; */
+}
+
+.medias_section article h2 {
+    color: #901C1C;
+    font-size: 21px;
+    font-weight: 400;
+}
+
+.medias_section article img {
+    height: 300px;
+    /*width: 350px;*/
+    width: 100%;
+    object-fit: cover; /* added */
+}
+
+.medias_section article video {
+    height: 300px;
+    /*width: 350px;*/
+    width: 100%;
+    object-fit: cover; /* added */
+}
+
+.media-content article h4 {
+    color: #D3573C;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.medias_section article button {
+    background: transparent;
+    border: none;
+    color: #901C1C;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.medias_section article p {
+    margin: 2px;
+    font-size: 15px;
+}
+
+.medias_section article span {
+    font-size: 17px;
+    font-weight: 400;
+    color: #901C1C;
+    margin-right: 5px;
+}
+
+.medias_section .like-heart {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

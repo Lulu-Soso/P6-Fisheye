@@ -1,0 +1,2 @@
+1- Affichage data (photohraphers.json) dans la console
+telechargement de l'extension jsonView dans chrome pour meilleur affichage Json

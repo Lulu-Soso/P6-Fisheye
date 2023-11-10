@@ -1,0 +1,42 @@
+@import url("photographer.css");
+@import url("homepage.css");
+@import url("medias.css");
+@import url("lightbox.css");
+
+body {
+    font-family: "DM Sans", sans-serif;
+    /*margin: 0;*/
+    width: 90%;
+    max-width: 1400px;
+    margin: auto;
+}
+
+
+header {
+    display: block;
+}
+header .header-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+}
+
+main header .photograph-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    color: #901C1C;
+    margin-right: 100px;
+}
+
+.logo {
+    height: 50px;
+    /*margin-left: 100px;*/
+}
+

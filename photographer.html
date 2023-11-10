@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+    <link href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Fisheye - photographe</title>
+</head>
+
+<body>
+    <header role="banner">
+        <div class="header-top">
+            <a href="index.html" title="Accueil">
+                <img src="assets/images/logo.png" class="logo" alt="Logo de Fisheye" aria-label="Logo de Fisheye">
+            </a>
+        </div>
+    </header>
+    <main id="main">
+
+        <!-- HEADER -->
+        <header id="photograph-profil" aria-label="photographer information">
+            <section id="profil-header" class="photograph-header"></section>
+        </header>
+
+        <div class="medias">
+            <div class="medias_filter">
+                <label for="media_filter">Trier par</label>
+                <select aria-haspopup="menu" name="media_filter" id="media_filter"
+                    aria-label="Sélectionnez un filtre pour trier les photographies">
+                    <option hidden>Préférence</option>
+                    <option role='option' value="popularity">Popularité</option>
+                    <option role='option' value="date">Date</option>
+                    <option role='option' value="title">Titre</option>
+                </select>
+            </div>
+
+            <div class="medias_section"></div>
+        </div>
+    </main>
+
+    <div id="contact_modal">
+        <div class="modal">
+            <header>
+                <h2>Contactez-moi</h2>
+                <img src="assets/icons/close.svg" class="close" onclick="closeModal()" alt="image de fermeture modal"
+                    aria-label="fermeture du modal" tabindex="1" />
+            </header>
+            <form>
+                <div class="input-group">
+                    <label for="firstname">Prénom</label>
+                    <input id="firstname" type="text" class="input" placeholder="3 caractères minimum" maxlength="24"
+                        autocomplete="off" tabindex="2" aria-describedby="firstname-error" />
+                    <span id="firstname-error" class="error-msg" aria-hidden="true">Votre prénom doit contenir au moins
+                        3 caractères.</span>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input id="email" type="email" class="input" placeholder="votre email" autocomplete="off"
+                        tabindex="3" aria-describedby="email-error" />
+                    <span id="email-error" class="error-msg" aria-hidden="true">Rentrez un email valide.</span>
+                </div>
+                <div class="input-group">
+                    <label for="message">Votre message</label>
+                    <textarea id="message" type="text" class="input" name="message" placeholder="100 caractères minimum"
+                        maxlength="400" tabindex="4" aria-describedby="message-error"></textarea>
+                    <span id="message-error" class="error-msg" aria-hidden="true">Nombre de 100 caractères
+                        minimum</span>
+                </div>
+                <button type="submit" class="contact_button" aria-label="Envoyer le formulaire de contact"
+                    tabindex="5">Envoyer</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="scripts/pages/photographer.js" type="module"></script>
+    <script src="scripts/utils/contactForm.js"></script>
+</body>
+
+</html>

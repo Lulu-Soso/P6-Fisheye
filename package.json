@@ -1,0 +1,26 @@
+{
+  "devDependencies": {
+    "eslint": "^8.32.0",
+    "yorkie": "^2.0.0"
+  },
+  "scripts": {
+    "lint": "eslint --max-warnings=0 ."
+  },
+  "rules": {
+    "eqeqeq": "warn",
+    "indent": [
+      "warn",
+      2,
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "multiline-ternary": [
+      "warn",
+      "always-multiline"
+    ]
+  },
+  "gitHooks": {
+    "pre-push": "npm run lint"
+  }
+}
